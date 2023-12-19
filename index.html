@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP Pusher</title>
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!--  skip to main content -->
+    <a href="#main" class="skip_nav_link">Skip navigation</a>
+
+    <header>
+      <nav>
+        <a href="#" class="logo">
+          <picture><img src="imgs/logo.svg" alt="WP Pusher logo" /></picture>
+        </a>
+
+        <ul class="nav_list_cont flex" role="list">
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Learn more</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article class="main_article">
+        <section class="left_section">
+          <h1 class="borderB">Checkout</h1>
+
+          <form action="javascript:void(0);">
+            <section class="form_top_section borderB">
+              <div class="flex info_cont">
+                <p class="flex number"><span>1</span></p>
+                <p class="info">Your Basic Information</p>
+              </div>
+
+              <div class="grid2fr">
+                <div class="flex_col">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="Jane" />
+                </div>
+                <div class="flex_col">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Doe" />
+                </div>
+              </div>
+              <div class="grid3fr">
+                <div class="flex_col">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="janedoe@example.com" />
+                </div>
+                <div></div>
+              </div>
+            </section>
+
+            <section class="form_middle_section borderB">
+              <div class="flex info_cont">
+                <p class="flex number">2</p>
+                <p class="info">Your Payment Information</p>
+              </div>
+
+              <div class="credit_card_cont">
+                <label>Credit Card</label>
+                <div
+                  class="card_details_cont"
+                  onpointerleave="this.classList.remove('card_details_cont_outline')"
+                  onclick="this.classList.add('card_details_cont_outline')">
+                  <input
+                    type="number"
+                    name="cardNumber"
+                    id="cardNumber"
+                    placeholder="Card Number"
+                    class="card_numer" />
+                  <input
+                    type="number"
+                    name="month"
+                    id="month"
+                    placeholder="MM"
+                    maxlength="2"
+                    oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
+                    class="month" />
+                  <span>/</span>
+                  <input
+                    type="number"
+                    name="year"
+                    id="year"
+                    placeholder="YY"
+                    maxlength="2"
+                    oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
+                    class="year" />
+                  <input
+                    type="number"
+                    name="cvc"
+                    id="cvc"
+                    placeholder="CVC"
+                    maxlength="3"
+                    oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
+                    class="cvc" />
+                </div>
+              </div>
+            </section>
+
+            <section class="form_bottom_section">
+              <button>Buy WP Pusher</button>
+            </section>
+          </form>
+
+          <div class="help_cont">
+            <p class="flex">
+              <img src="imgs/question.svg" alt="question mark in a circle" />
+              <span
+                ><strong>Need any help?</strong> Don’t hesitate to
+                <a href="#" class="support">contact</a> support!</span
+              >
+            </p>
+            <picture><img src="imgs/stripe.svg" alt="stripe" /></picture>
+          </div>
+        </section>
+
+        <section class="right_section">
+          <h2>Freelancer</h2>
+          <section>
+            <div class="price">
+              <span class="price_dollar">$</span>
+              <p><span class="price_amoount">99</span>/ year</p>
+            </div>
+            <em class="renews">Automatically renews <br />after 1 year</em>
+          </section>
+
+          <section class="plan_deetails">
+            <p class="flex">
+              <img src="imgs/check.svg" alt="check mark in a circle" />
+              <span>Use on<strong> 5 </strong>client sites</span>
+            </p>
+            <p class="flex">
+              <img src="imgs/check.svg" alt="check mark in a circle" />Private
+              repositories
+            </p>
+            <p class="flex">
+              <img src="imgs/check.svg" alt="check mark in a circle" />Email
+              support
+            </p>
+          </section>
+
+          <section class="switch_cont">
+            <p>Need <span>20</span> client sites?</p>
+            <a href="#" class="switch">
+              <strong>Switch to the <em>Agency</em> plan.</strong>
+            </a>
+          </section>
+
+          <section>
+            <p class="ftp">
+              <em>
+                FTP is horrible to deal with. <strong>WP Pusher</strong> solves
+                that issue, and the customer support is awesome!</em
+              >
+            </p>
+
+            <div class="flex picture_kirk">
+              <picture>
+                <img src="imgs/pic.svg" alt="headshot of a man smiling" />
+              </picture>
+              <p>Kirk Beard</p>
+            </div>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <aside>© 2018 WP Pusher IVS · <a href="#">Terms of Service</a></aside>
+  </body>
+</html>
